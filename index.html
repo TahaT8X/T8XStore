@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#07111f">
+
+<title>T8X Store | متجر شحن الألعاب</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link
+href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- LOADER -->
+
+<div id="loader">
+
+    <div class="loader-logo">T8X</div>
+
+    <div class="loader-bar">
+        <span></span>
+    </div>
+
+    <small>جاري تحميل المتجر...</small>
+
+</div>
+
+
+<!-- NAVBAR -->
+
+<header class="navbar">
+
+    <a
+        href="#"
+        class="brand"
+        onclick="goHome(); return false;"
+    >
+
+        <div class="brand-logo">
+            T8X
+        </div>
+
+        <div>
+            <b>T8X Store</b>
+            <small>Gaming Store</small>
+        </div>
+
+    </a>
+
+    <nav>
+
+        <a href="#games">الألعاب</a>
+
+        <a href="#faq">الأسئلة الشائعة</a>
+
+    </nav>
+
+    <button
+        class="cart-button"
+        onclick="openCart()"
+    >
+        🛒
+        <span id="cartCount">0</span>
+    </button>
+
+</header>
+
+
+<main>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="hero-text">
+
+        <div class="hero-badge">
+            ⚡ شحن سريع • أسعار مميزة
+        </div>
+
+        <h1>
+            اشحن لعبتك
+            <span>بسهولة وأمان</span>
+        </h1>
+
+        <p>
+            اختر لعبتك، حدد الباقة التي تريدها،
+            ثم جهز طلبك وتواصل معنا مباشرة عبر Telegram.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#games" class="primary-btn">
+                🎮 ابدأ الآن
+            </a>
+
+            <a href="#faq" class="secondary-btn">
+                كيف أطلب؟
+            </a>
+
+        </div>
+
+        <div class="trust-row">
+
+            <span>⚡ سريع</span>
+            <span>🛡️ موثوق</span>
+            <span>💬 دعم مباشر</span>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-visual">
+
+        <div class="glow"></div>
+
+        <div class="main-orb">
+            🎮
+        </div>
+
+        <div class="floating f1">💎</div>
+        <div class="floating f2">UC</div>
+        <div class="floating f3">FC</div>
+        <div class="floating f4">⚡</div>
+
+    </div>
+
+</section>
+
+
+<!-- GAMES -->
+
+<section id="games" class="section">
+
+    <div class="section-heading">
+
+        <span>GAME STORE</span>
+
+        <h2>اختر لعبتك</h2>
+
+        <p>اختر اللعبة التي تريد شحنها</p>
+
+    </div>
+
+
+    <div class="games-grid">
+
+
+        <!-- FREE FIRE -->
+
+        <article
+            class="game-card"
+            onclick="openGame('freefire')"
+        >
+
+            <div class="game-art">
+
+                <img
+                    src="images/freefire.jpg"
+                    alt="Free Fire"
+                >
+
+                <div class="art-overlay"></div>
+
+                <div class="art-label">
+                    FREE FIRE
+                </div>
+
+            </div>
+
+            <div class="game-card-info">
+
+                <div>
+
+                    <small>BATTLE ROYALE</small>
+
+                    <h3>Free Fire</h3>
+
+                    <p>
+                        شحن جواهر Free Fire
+                    </p>
+
+                </div>
+
+                <button type="button">
+                    عرض الباقات ←
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- PUBG -->
+
+        <article
+            class="game-card"
+            onclick="openGame('pubg')"
+        >
+
+            <div class="game-art">
+
+                <img
+                    src="images/pubg.jpg"
+                    alt="PUBG Mobile"
+                >
+
+                <div class="art-overlay"></div>
+
+                <div class="art-label">
+                    PUBG MOBILE
+                </div>
+
+            </div>
+
+            <div class="game-card-info">
+
+                <div>
+
+                    <small>BATTLE ROYALE</small>
+
+                    <h3>PUBG Mobile</h3>
+
+                    <p>
+                        شحن شدات PUBG Mobile
+                    </p>
+
+                </div>
+
+                <button type="button">
+                    عرض الباقات ←
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- FC -->
+
+        <article
+            class="game-card"
+            onclick="openGame('fc')"
+        >
+
+            <div class="game-art">
+
+                <img
+                    src="images/fc-mobile.jpg"
+                    alt="FC Mobile"
+                >
+
+                <div class="art-overlay"></div>
+
+                <div class="art-label">
+                    FC MOBILE
+                </div>
+
+            </div>
+
+            <div class="game-card-info">
+
+                <div>
+
+                    <small>FOOTBALL</small>
+
+                    <h3>FC Mobile</h3>
+
+                    <p>
+                        شحن FC Points
+                    </p>
+
+                </div>
+
+                <button type="button">
+                    عرض الباقات ←
+                </button>
+
+            </div>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+<!-- SHOP -->
+
+<section
+    id="shop"
+    class="section shop-section hidden"
+>
+
+    <button
+        class="back-button"
+        onclick="goHome()"
+    >
+        → العودة للألعاب
+    </button>
+
+
+    <div class="shop-header">
+
+        <div>
+
+            <span id="gameCategory">GAME</span>
+
+            <h2 id="gameTitle">الباقات</h2>
+
+            <p>
+                اختر كمية الشحن المناسبة
+            </p>
+
+        </div>
+
+
+        <div class="game-mini-icon">
+
+            <img
+                id="gameMiniImage"
+                src=""
+                alt=""
+            >
+
+        </div>
+
+    </div>
+
+
+    <!-- PLAYER ID -->
+
+    <div class="player-id-box">
+
+        <div class="id-title">
+
+            <span>🆔</span>
+
+            <div>
+
+                <strong>ID اللاعب</strong>
+
+                <small>
+                    أدخل ID اللعبة
+                </small>
+
+            </div>
+
+        </div>
+
+
+        <input
+            id="playerId"
+            type="text"
+            inputmode="numeric"
+            placeholder="اكتب ID اللاعب هنا"
+        >
+
+    </div>
+
+
+    <!-- SEARCH -->
+
+    <div class="search-box">
+
+        🔎
+
+        <input
+            id="packageSearch"
+            type="text"
+            placeholder="ابحث عن كمية الشحن..."
+            oninput="filterPackages()"
+        >
+
+    </div>
+
+
+    <div
+        id="packagesGrid"
+        class="packages-grid"
+    ></div>
+
+</section>
+
+
+<!-- FAQ -->
+
+<section
+    id="faq"
+    class="section faq-section"
+>
+
+    <div class="section-heading">
+
+        <span>FAQ</span>
+
+        <h2>الأسئلة الشائعة</h2>
+
+        <p>
+            كل ما تحتاج معرفته قبل الطلب
+        </p>
+
+    </div>
+
+
+    <div class="faq-list">
+
+        <details>
+
+            <summary>
+                كيف أطلب شحن؟
+                <b>+</b>
+            </summary>
+
+            <p>
+                اختر اللعبة، اكتب ID اللاعب،
+                اختر الباقة ثم أضفها للسلة.
+                بعد ذلك راجع طلبك واضغط على Telegram
+                للتواصل مع المالك.
+            </p>
+
+        </details>
+
+
+        <details>
+
+            <summary>
+                هل أحتاج إلى إنشاء حساب؟
+                <b>+</b>
+            </summary>
+
+            <p>
+                لا، لا تحتاج إلى إنشاء حساب في المتجر.
+            </p>
+
+        </details>
+
+
+        <details>
+
+            <summary>
+                هل يمكنني طلب أكثر من باقة؟
+                <b>+</b>
+            </summary>
+
+            <p>
+                نعم، يمكنك إضافة أكثر من باقة إلى السلة.
+            </p>
+
+        </details>
+
+
+        <details>
+
+            <summary>
+                ماذا أفعل بعد تجهيز الطلب؟
+                <b>+</b>
+            </summary>
+
+            <p>
+                راجع الطلب ثم اضغط تأكيد الطلب.
+                بعد ذلك اضغط Telegram لإرسال الطلب للمالك.
+            </p>
+
+        </details>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="footer-brand">
+        T8X Store
+    </div>
+
+    <p>
+        متجر شحن الألعاب 🎮
+    </p>
+
+
+    <div class="footer-links">
+
+        <a
+            href="https://t.me/TahaT8XStore"
+            target="_blank"
+            rel="noopener"
+            class="footer-telegram"
+        >
+            🛒 T8X Store
+        </a>
+
+
+        <a
+            href="https://t.me/T8XUnit"
+            target="_blank"
+            rel="noopener"
+            class="footer-telegram"
+        >
+            🛠️ T8X Unit
+        </a>
+
+
+        <a
+            href="https://t.me/tahat8x"
+            target="_blank"
+            rel="noopener"
+            class="footer-telegram"
+        >
+            📢 قناة المودات
+        </a>
+
+    </div>
+
+
+    <div class="footer-line"></div>
+
+
+    <small>
+        © 2026 T8X Store — جميع الحقوق محفوظة
+    </small>
+
+</footer>
+
+
+<!-- CART -->
+
+<div
+    id="cartOverlay"
+    class="overlay hidden"
+>
+
+    <div class="cart-panel">
+
+        <div class="panel-header">
+
+            <div>
+
+                <span>YOUR CART</span>
+
+                <h2>🛒 طلبك</h2>
+
+            </div>
+
+            <button onclick="closeCart()">
+                ×
+            </button>
+
+        </div>
+
+
+        <div id="cartItems"></div>
+
+
+        <div
+            id="cartEmpty"
+            class="cart-empty"
+        >
+
+            <div class="empty-icon">
+                🛒
+            </div>
+
+            <h3>السلة فارغة</h3>
+
+            <p>
+                اختر باقة لإضافتها إلى طلبك.
+            </p>
+
+        </div>
+
+
+        <div
+            id="cartBottom"
+            class="cart-bottom hidden"
+        >
+
+            <!-- DISCOUNT -->
+
+            <div
+                style="
+                margin-bottom:15px;
+                padding:15px;
+                border:1px solid rgba(22,135,255,.18);
+                border-radius:15px;
+                background:rgba(22,135,255,.05);
+                "
+            >
+
+                <strong>
+                    🎟️ كود الخصم
+                </strong>
+
+                <div
+                    style="
+                    display:flex;
+                    gap:8px;
+                    margin-top:10px;
+                    "
+                >
+
+                    <input
+                        id="discountCode"
+                        type="text"
+                        placeholder="أدخل كود الخصم"
+                        style="
+                        flex:1;
+                        padding:11px;
+                        border-radius:10px;
+                        border:1px solid rgba(255,255,255,.08);
+                        background:#07111f;
+                        color:white;
+                        outline:none;
+                        "
+                    >
+
+                    <button
+                        type="button"
+                        onclick="applyDiscount()"
+                        style="
+                        padding:10px 14px;
+                        border:0;
+                        border-radius:10px;
+                        background:#1687ff;
+                        color:white;
+                        font-weight:800;
+                        "
+                    >
+                        تطبيق
+                    </button>
+
+                </div>
+
+                <small
+                    id="discountMessage"
+                    style="
+                    display:block;
+                    margin-top:8px;
+                    color:#8da2ba;
+                    "
+                ></small>
+
+            </div>
+
+
+            <div class="total">
+
+                <span>الإجمالي</span>
+
+                <strong id="cartTotal">
+                    0 جنيه
+                </strong>
+
+            </div>
+
+
+            <div
+                id="discountTotal"
+                style="
+                display:none;
+                margin-bottom:15px;
+                color:#40e595;
+                font-size:13px;
+                "
+            ></div>
+
+
+            <button
+                class="checkout-btn"
+                onclick="checkout()"
+            >
+                📋 تأكيد الطلب
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ORDER -->
+
+<div
+    id="orderOverlay"
+    class="overlay hidden"
+>
+
+    <div class="order-panel">
+
+        <button
+            class="close-order"
+            onclick="closeOrder()"
+        >
+            ×
+        </button>
+
+
+        <div class="success-circle">
+            ✓
+        </div>
+
+
+        <span>ORDER READY</span>
+
+
+        <h2>
+            تم تجهيز طلبك 🎮
+        </h2>
+
+
+        <div
+            id="orderNumber"
+            class="order-number"
+        ></div>
+
+
+        <div
+            id="finalOrder"
+            class="final-order"
+        ></div>
+
+
+        <div class="order-total">
+
+            <span>الإجمالي</span>
+
+            <strong id="finalTotal"></strong>
+
+        </div>
+
+
+        <button
+            class="copy-order-btn"
+            onclick="copyOrder()"
+        >
+            📋 نسخ الطلب
+        </button>
+
+
+        <a
+            id="telegramLink"
+            href="#"
+            target="_blank"
+            rel="noopener"
+            class="telegram-btn"
+        >
+            ➤ التواصل مع المالك عبر Telegram
+        </a>
+
+
+        <div class="order-note">
+
+            <strong>
+                📌 لإتمام عملية الشحن
+            </strong>
+
+            <p>
+                راجع بيانات الطلب، ثم اضغط Telegram
+                وأرسل الرسالة للمالك.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- TOAST -->
+
+<div
+    id="toast"
+    class="toast"
+>
+    تم النسخ ✓
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
